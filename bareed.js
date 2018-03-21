@@ -66,25 +66,6 @@ class Person {
 
 
 /**********************************************************
-* Customer - defines a customer with a desire for ice cream
-* Subclasses Person
-*
-* _isInRange(vendor) - checks if the customer is in range of vendor.
-*
-* _haveEnoughMoney(vendor, numberOfIceCreams) - checks if the customer
-*     has enough money to buy a specific number of ice creams from vendor.
-*
-* requestIceCream(vendor, numberOfIceCreams) - if the customer is in the vendor's
-*     range and has enough money for, a request is sent to the vendor.
-*
-* new customer = new Customer(name, x, y);
-**********************************************************/
-class Customer {
-  // implement Customer!
-}
-
-
-/**********************************************************
 * Vendor - defines a vendor with a desire for money
 * Subclasses Person
 *
@@ -105,6 +86,25 @@ class Customer {
 **********************************************************/
 class Vendor {
   // implement Vendor!
+}
+
+
+/**********************************************************
+* Customer - defines a customer with a desire for ice cream
+* Subclasses Person
+*
+* _isInRange(vendor) - checks if the customer is in range of vendor.
+*
+* _haveEnoughMoney(vendor, numberOfIceCreams) - checks if the customer
+*     has enough money to buy a specific number of ice creams from vendor.
+*
+* requestIceCream(vendor, numberOfIceCreams) - if the customer is in the vendor's
+*     range and has enough money for, a request is sent to the vendor.
+*
+* new customer = new Customer(name, x, y);
+**********************************************************/
+class Customer {
+  // implement Customer!
 }
 
 

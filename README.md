@@ -24,6 +24,21 @@ The objects have the following properties and methods:
   * `wallet` - a `Wallet` initially with 0.
   * `moveTo(point)` - moves the person to the new `point`.
 
+* `Vendor`:
+  * `name`
+  * `location` - a `Point`.
+  * `wallet` - a `Wallet` initially with **0**.
+  * `range` - the maximum distance this vendor can travel - initially 5.
+  * `price` - the cost of a single ice cream - initially 1.
+  * `moveTo(point)` - moves the customer to the new `point`.
+  * `changeRange(newRange)` - updates the `range`.
+  * `changePrice(newPrice)` - updates the `price`.
+  * `receiveRequest(customer, numberOfIceCreams)` -  receives a request from `customer` for a specific number of ice creams. Then does the following:
+    * Moves to the `customer`'s `location`.
+    * Transfers money from the `customer`'s `wallet` to the vendor's `wallet`.  
+  **NOTE**: You might have to partially build the `Customer` class first
+  before you can get this to work!
+
 * `Customer`:
   * `name`
   * `location` - a `Point`.
@@ -40,20 +55,6 @@ The objects have the following properties and methods:
   **NOTE**: You might have to partially build the `Vendor` class first
   before you can get this to work!
 
-* `Vendor`:
-  * `name`
-  * `location` - a `Point`.
-  * `wallet` - a `Wallet` initially with **0**.
-  * `range` - the maximum distance this vendor can travel - initially 5.
-  * `price` - the cost of a single ice cream - initially 1.
-  * `moveTo(point)` - moves the customer to the new `point`.
-  * `changeRange(newRange)` - updates the `range`.
-  * `changePrice(newPrice)` - updates the `price`.
-  * `receiveRequest(customer, numberOfIceCreams)` -  receives a request from `customer` for a specific number of ice creams. Then does the following:
-    * Moves to the `customer`'s `location`.
-    * Transfers money from the `customer`'s `wallet` to the vendor's `wallet`.  
-  **NOTE**: You might have to partially build the `Customer` class first
-  before you can get this to work!
 
 ### Example Usage
 
