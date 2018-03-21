@@ -14,7 +14,7 @@ The objects have the following properties and methods:
   from the current point.
 
 * `Wallet`:
-  * `money`
+  * `money` - initially set to 0.
   * `credit(amount)` - adds `amount` to `money`.
   * `debit(amount)` - subtracts `amount` from `money`.
 
@@ -29,8 +29,8 @@ The objects have the following properties and methods:
   * `location` - a `Point`.
   * `wallet` - a `Wallet` initially with **100**.
   * `moveTo(point)` - moves the customer to the new `point`.
-  * `isInRange(vendor)` - checks if the customer is in range of `vendor`.
-  * `haveEnoughMoney(vendor, numberOfIceCreams)` - checks if the the customer
+  * `_isInRange(vendor)` - checks if the customer is in range of `vendor`.
+  * `_haveEnoughMoney(vendor, numberOfIceCreams)` - checks if the customer
   has enough money to buy a specific number of ice creams from `vendor`.
   * `requestIceCream(vendor, numberOfIceCreams)` - sends a request to
   `vendor` to buy a specific number of ice creams but **ONLY IF** the customer
