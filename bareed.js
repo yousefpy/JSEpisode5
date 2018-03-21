@@ -76,11 +76,11 @@ class Person {
 *
 * changePrice(newPrice) - updates the price.
 *
-* receiveRequest(customer, numberOfIceCreams) -  receives a request from customer
-*     for a specific number of ice creams. Then does the following:
-*             - Moves to the customer's location
-*             - Transfers money from the customer's wallet
-*               to the vendor's wallet
+* sellTo(customer, numberOfIceCreams) -  sells a specific number of ice creams
+*     to the customer by doing the following:
+*         - Moves to the customer's location
+*         - Transfers money from the customer's wallet
+*           to the vendor's wallet
 *
 * new vendor = new Vendor(name, x, y);
 **********************************************************/

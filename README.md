@@ -33,9 +33,9 @@ The objects have the following properties and methods:
   * `moveTo(point)` - moves the customer to the new `point`.
   * `changeRange(newRange)` - updates the `range`.
   * `changePrice(newPrice)` - updates the `price`.
-  * `receiveRequest(customer, numberOfIceCreams)` -  receives a request from `customer` for a specific number of ice creams. Then does the following:
-    * Moves to the `customer`'s `location`.
-    * Transfers money from the `customer`'s `wallet` to the vendor's `wallet`.  
+  * `sellTo(customer, numberOfIceCreams)` -  sells a specific number of ice creams to `customer` by doing the following:
+    * Move to the `customer`'s `location`.
+    * Transfer money from the `customer`'s `wallet` to the vendor's `wallet`.  
   **NOTE**: You might have to partially build the `Customer` class first
   before you can get this to work!
 
