@@ -14,7 +14,7 @@ The objects have the following properties and methods:
   from the current point.
 
 * `Wallet`:
-  * `money` - initially set to 0.
+  * `money` - defaults to 0.
   * `credit(amount)` - adds `amount` to `money`.
   * `debit(amount)` - subtracts `amount` from `money`.
 
