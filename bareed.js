@@ -26,7 +26,7 @@ class Point {
 /**********************************************************
 * Wallet - keeps track of money
 *
-* money - how much money is in the wallet
+* money - how much money is in the wallet. Defaults to 0.
 *
 * credit(amount) - adds `amount` to `money`.
 *
