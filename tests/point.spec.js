@@ -13,7 +13,7 @@ test.beforeEach(t => {
   t.context.point = new Point(4, 3);
 });
 
-test('should create a point instance with x and y coordinates', t => {
+test('"new Point(x, y)" should create a point instance with x and y coordinates', t => {
   let point = t.context.point;
   t.is(point.x, 4, `Expected point.x to be 4, got ${point.x} instead`);
   t.is(point.y, 3, `Expected point.y to be 3, got ${point.y} instead`);
