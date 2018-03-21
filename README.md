@@ -36,7 +36,7 @@ The objects have the following properties and methods:
   `vendor` to buy a specific number of ice creams but **ONLY IF** the customer
   is in the vendor's range **AND** they have enough money to buy that much
   ice cream. **ONLY THEN** is a request sent.  
-  **BONUS**: Log a helpful message to let the customer no why they can't have ice cream.  
+  **BONUS**: Log a helpful message to let the customer know why they can't have ice cream.  
   **NOTE**: You might have to partially build the `Vendor` class first
   before you can get this to work!
 
@@ -58,7 +58,7 @@ The objects have the following properties and methods:
 ### Example Usage
 
 ```javascript
-let vendorAsis = new Vendor('Asis', 10, 10); // create a new vendor named Hamsa at location (10,10)
+let vendorAsis = new Vendor('Asis', 10, 10); // create a new vendor named Asis at location (10,10)
 let nearbyCustomer = new Customer('MishMish', 11, 11); // create a new customer named MishMish at location (11,11)
 let distantCustomer = new Customer('Hamsa', 1000, 1000); // create a new customer named Hamsa at location (1000,1000)
 let brokeCustomer = new Customer('Maskeen', 12, 12); // create a new customer named Maskeen at location (12,12)
