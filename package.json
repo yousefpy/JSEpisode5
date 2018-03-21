@@ -12,7 +12,7 @@
   },
   "ava": {
     "files": [
-      "*.spec.js"
+      "tests/*.spec.js"
     ],
     "require": [
       "@std/esm"
