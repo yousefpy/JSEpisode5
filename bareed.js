@@ -54,7 +54,7 @@ class Wallet {
 *
 * name - name of said person
 * location - a Point
-* wallet` - a `Wallet` initially with 0.
+* wallet` - a Wallet instance initially with 0.
 *
 * moveTo(point) - updates the location to point
 *
@@ -92,6 +92,8 @@ class Vendor {
 /**********************************************************
 * Customer - defines a customer with a desire for ice cream
 * Subclasses Person
+*
+* wallet - a Wallet instance initially with 10.
 *
 * _isInRange(vendor) - checks if the customer is in range of vendor.
 *
