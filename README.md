@@ -31,8 +31,6 @@ The objects have the following properties and methods:
   * `range` - the maximum distance this vendor can travel - initially 5.
   * `price` - the cost of a single ice cream - initially 1.
   * `moveTo(point)` - moves the customer to the new `point`.
-  * `changeRange(newRange)` - updates the `range`.
-  * `changePrice(newPrice)` - updates the `price`.
   * `sellTo(customer, numberOfIceCreams)` -  sells a specific number of ice creams to `customer` by doing the following:
     * Move to the `customer`'s `location`.
     * Transfer money from the `customer`'s `wallet` to the vendor's `wallet`.  
