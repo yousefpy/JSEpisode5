@@ -75,5 +75,5 @@ test('sellTo(customer, number) should transfer money from the customer wallet to
 
   t.is(vendor.wallet.money, expectedVendorMoney, `The vendor starts with ${vendorMoney} in their wallet. Expected the vendor to have ${expectedVendorMoney} in their wallet after selling ${numberOfIceCreams} ice creams at ${newPrice}/ice cream, instead vendor has ${vendor.wallet.money} in their wallet`);
 
-  t.is(customer.wallet.money, 270, `The customer starts with ${customerMoney} in their wallet. Expected the customer to have ${expectedCustomerMoney} in their wallet after buying ${numberOfIceCreams} ice creams at ${newPrice}/ice cream, instead customer has ${customer.wallet.money} in their wallet`);
+  t.is(customer.wallet.money, expectedCustomerMoney, `The customer starts with ${customerMoney} in their wallet. Expected the customer to have ${expectedCustomerMoney} in their wallet after buying ${numberOfIceCreams} ice creams at ${newPrice}/ice cream, instead customer has ${customer.wallet.money} in their wallet`);
 });
