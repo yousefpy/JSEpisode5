@@ -20,6 +20,12 @@ class Point {
     let yDelta = this.y - point.y;
     return Math.sqrt(xDelta*xDelta + yDelta*yDelta); // PYTHAGORAS!
   }
+
+  static randomPoint(maxX, maxY) {
+    let x = Math.random() * maxX;
+    let y = Math.random() * maxY;
+    return new Point(x, y);
+  }
 }
 
 
@@ -71,10 +77,6 @@ class Person {
 *
 * range - the maximum distance this vendor can travel - initially 5
 * price - the cost of a single ice creams - initially 1
-*
-* changeRange(newRange) - updates the range.
-*
-* changePrice(newPrice) - updates the price.
 *
 * sellTo(customer, numberOfIceCreams) -  sells a specific number of ice creams
 *     to the customer by doing the following:
