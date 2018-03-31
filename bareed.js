@@ -22,8 +22,8 @@ class Point {
   }
 
   static randomPoint(maxX, maxY) {
-    let x = Math.random() * maxX;
-    let y = Math.random() * maxY;
+    let x = Math.random() * (maxX || 100);
+    let y = Math.random() * (maxY || 100);
     return new Point(x, y);
   }
 }
