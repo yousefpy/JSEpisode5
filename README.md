@@ -40,7 +40,7 @@ The objects have the following properties and methods:
 * `Customer`:
   * `name`
   * `location` - a `Point`.
-  * `wallet` - a `Wallet` initially with **100**.
+  * `wallet` - a `Wallet` initially with **10**.
   * `moveTo(point)` - moves the customer to the new `point`.
   * `_isInRange(vendor)` - checks if the customer is in range of `vendor`.
   * `_haveEnoughMoney(vendor, numberOfIceCreams)` - checks if the customer
