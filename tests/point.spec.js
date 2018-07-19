@@ -1,28 +1,28 @@
 /**************************
-*
-* THIS IS A TESTING FILE
-*
-* DO NOT MODIFY THIS FILE
-*
-***************************/
+ *
+ * THIS IS A TESTING FILE
+ *
+ * DO NOT MODIFY THIS FILE
+ *
+ ***************************/
 
-import test from 'ava';
-import {Point} from '../bareed';
+import { Point } from "../bareed";
 
-test.beforeEach(t => {
-  t.context.point = new Point(4, 3);
+let point;
+
+beforeEach(() => {
+  point = new Point(4, 3);
 });
 
-test('"new Point(x, y)" should create a point instance with x and y coordinates', t => {
-  let point = t.context.point;
-  t.is(point.x, 4, `Expected point.x to be 4, got ${point.x} instead`);
-  t.is(point.y, 3, `Expected point.y to be 3, got ${point.y} instead`);
-});
+describe("new Point(4, 3):", () => {
+  test("creates a point instance with x=4 and y=3 coordinates", () => {
+    expect(point.x).toBe(4);
+    expect(point.y).toBe(3);
+  });
 
-test('should correctly calculate the distance between two points', t => {
-  let point = t.context.point;
-  let secondPoint = new Point(0, 0);
-  let distance = point.distanceTo(secondPoint);
-  t.is(distance, 5,
-    `Expected the distance between (4,3) and (0,0) to be 5, got ${distance} instead`);
+  test("has a distanceTo(anotherPoint) method which correctly calculates the distance between two points", () => {
+    let secondPoint = new Point(0, 0);
+    let distance = point.distanceTo(secondPoint);
+    expect(distance).toBe(5);
+  });
 });
