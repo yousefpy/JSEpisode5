@@ -15,25 +15,29 @@ beforeEach(() => {
 });
 
 describe("new Person('Asis', 4, 3)", () => {
-  test("creates a person instance named", () => {
+  test("creates a person instance named 'Asis'", () => {
     expect(person.name).toBe("Asis");
   });
 
-  test("has a location which is a point instance", () => {
-    expect(person.location instanceof Point).toBe(true);
+  describe("has a location", () => {
+    test("which is a point instance", () => {
+      expect(person.location instanceof Point).toBe(true);
+    });
+
+    test("with coordinates (4,3)", () => {
+      let expected = new Point(4, 3);
+      expect(person.location).toEqual(expected);
+    });
   });
 
-  test("has a wallet which is a Wallet instance", () => {
-    expect(person.wallet instanceof Wallet).toBe(true);
-  });
+  describe("has a wallet", () => {
+    test("which is a Wallet instance", () => {
+      expect(person.wallet instanceof Wallet).toBe(true);
+    });
 
-  test("creates a person with location (4,3)", () => {
-    let expected = new Point(4, 3);
-    expect(person.location).toEqual(expected);
-  });
-
-  test("has a wallet with no money", () => {
-    expect(person.wallet.money).toBe(0);
+    test("with no money", () => {
+      expect(person.wallet.money).toBe(0);
+    });
   });
 
   test("has a moveTo(newPoint) method changes the person's location to newPoint", () => {
