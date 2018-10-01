@@ -64,7 +64,7 @@ class Person {
 }
 
 /**********************************************************
- * Vendor: defines a vendor with a desire for money
+ * Vendor: defines a vendor
  * Subclasses Person
  *
  * range: the maximum distance this vendor can travel - initially 5
@@ -83,7 +83,7 @@ class Vendor {
 }
 
 /**********************************************************
- * Customer: defines a customer with a desire for ice cream
+ * Customer: defines a customer
  * Subclasses Person
  *
  * wallet: a Wallet instance initially with 10.
